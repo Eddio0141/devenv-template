@@ -1,7 +1,7 @@
 {
   description = "Template for devenv flake with fix";
 
-  outputs = { self, nixpkgs, pre-commit-hooks, nix, ... }@inputs:
+  outputs = { self, ... }@inputs:
     {
       templates.default = {
         path = ./templates/simple;
